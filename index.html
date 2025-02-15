@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>DevFolio - Developer Portfolio Template</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Free Website Template" name="keywords">
+        <meta content="Free Website Template" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body data-spy="scroll" data-target=".navbar" data-offset="51">
+        <!-- Nav Bar Start -->
+        <div class="navbar navbar-expand-lg bg-light navbar-light">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand">DevFolio</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto">
+                        <a href="#home" class="nav-item nav-link active">Home</a>
+                        <a href="#about" class="nav-item nav-link">About</a>
+                        <a href="#experience" class="nav-item nav-link">Experience</a>
+                        <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
+                        <a href="#review" class="nav-item nav-link">Review</a>
+                        <a href="#team" class="nav-item nav-link">Team</a>
+                        <a href="#contact" class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Nav Bar End -->
+
+
+        <!-- Hero Start -->
+        <div class="hero" id="home">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="hero-content">
+                            <div class="hero-text">
+                                <p>I'm</p>
+                                <h1>Darshika Premaranjan</h1>
+                                <h2></h2>
+                                <div class="typed-text">Software Engineer , Web Developer, Front End Developer, DevOps, Apps Developer</div>
+                            </div>
+                            <div class="hero-btn">
+                                <a class="btn" href="https://drive.google.com/file/d/12tFv0PuJi-vpm-y6oCychoiKjwab9oB-/view?usp=drive_link" target="_blank">Hire Me</a>
+                                <a class="btn" href="mailto:premaranjandarshika@gmail.com">Contact Me</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 d-none d-md-block">
+                        <div class="hero-image">
+                            <img src="img/hero.png" alt="Hero Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero End -->
+
+
+       <!-- About Start -->
+<div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="about-img">
+                    <img src="img/about.jpg" alt="Image">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-content">
+                    <div class="section-header text-left">
+                        <p>Learn About Me</p>
+                        <h2>Undergraduate</h2>
+                    </div>
+                    <div class="about-text">
+                        <p>
+                            As a dedicated Computer Engineering student from the University of Jaffna, I possess strong problem-solving skills and
+                            thrive in collaborative team environments. I am eager to apply my abilities and gain hands-on experience through a
+                            software engineer position, with the goal of growing into a successful professional in the industry.
+                        </p>
+                    </div>
+                    <div class="skills-box">
+                        <span class="skill">Java</span>
+                        <span class="skill">C++</span>
+                        <span class="skill">C#</span>
+                        <span class="skill">JavaScript</span>
+                        <span class="skill">Python</span>
+                        <span class="skill">Spring Boot</span>
+                        <span class="skill">.NET</span>
+                        <span class="skill">React</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+
+<!-- CSS for Skill Boxes -->
+<style>
+    .skills-box {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 15px;
+    }
+    
+    .skill {
+        background-color: #007bff;
+        color: white;
+        padding: 8px 15px;
+        border-radius: 5px;
+        font-weight: bold;
+        display: inline-block;
+    }
+</style>
+
+        
+       
+        
+<!-- Experience Start -->
+<div class="experience" id="experience">
+    <div class="container">
+        <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+            <p>My Resume</p>
+            <h2>My Journey</h2>
+        </header>
+<!-- Toggle Buttons for Work Experience and Education -->
+<div class="toggle-buttons text-center">
+    <button id="workExperienceBtn" class="btn active" onclick="toggleSection('work')">Work Experience</button>
+    <button id="educationBtn" class="btn" onclick="toggleSection('education')">Education</button>
+</div>
+
+        <!-- Work Experience Section -->
+        <div id="workExperience" class="timeline" style="display: block;">
+            <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+            </header>
+            <!-- Your Work Experience Timeline Items (as you already have) -->
+            <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+                <div class="timeline-text">
+                    <div class="timeline-date">2025 March - 2025 Sept</div>
+                    <h2></h2>
+                    <h4></h4>
+                    <p></p>
+                </div>
+            </div>
+            <!-- Add more timeline items here as needed -->
+        </div>
+        <!-- End Work Experience Section -->
+
+        <!-- Education Section (Initially Hidden) -->
+        <div id="education" class="timeline" style="display: none;">
+            <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <h2>Education</h2>
+            </header>
+            <!-- Your Education Timeline Items -->
+            <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+                <div class="timeline-text">
+                    <div class="timeline-date">2021 - 2025</div>
+                    <h2>Computer Engineering</h2>
+                    <h3>B.Sc. Eng.(Hons.) in Computer Engineering.</h3>
+                    <h4>University of Jaffna</h4>
+                    <p>CGPA: 3.63/4.0
+                        Undergraduate Coursework: Software Engineering; Operating Systems; Database Management Systems; Data
+                        Structures and Algorithms; Object Oriented Programming; Programming Languages; Comp. Architecture; ObjectOriented Software Development; Calculus; Linear Algebra
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+                <div class="timeline-text">
+                    <div class="timeline-date">2019 - 2020</div>
+                    <h2>Advance Careers Skills</h2>
+                    <h4>Technical college Vavuniya</h4>
+                    <p>
+                        Merit Pass
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+                <div class="timeline-text">
+                    <div class="timeline-date">2006 - 2019</div>
+                    <h2>G.C.E A/L & G.C.E O/L</h2>
+                    <h4>Vavuniya Rambaikulam Girls’s M.V</h4>
+                    <p>◦ G.C.E A/L Physical Science. A and 2C’s
+                        ◦ G.C.E O/L 7A’s B and C
+                    </p>
+                </div>
+            </div>
+            <!-- Add more education items here as needed -->
+        </div>
+        <!-- End Education Section -->
+    </div>
+</div>
+<!-- Experience End -->
+
+<!-- JavaScript for toggling the sections -->
+<script>
+    function toggleSection(section) {
+        if (section === 'work') {
+            // Show Work Experience, Hide Education
+            document.getElementById('workExperience').style.display = 'block';
+            document.getElementById('education').style.display = 'none';
+            document.getElementById('workExperienceBtn').classList.add('active');
+            document.getElementById('educationBtn').classList.remove('active');
+        } else {
+            // Show Education, Hide Work Experience
+            document.getElementById('workExperience').style.display = 'none';
+            document.getElementById('education').style.display = 'block';
+            document.getElementById('educationBtn').classList.add('active');
+            document.getElementById('workExperienceBtn').classList.remove('active');
+        }
+    }
+</script>
+
+<!-- CSS Styling for Buttons -->
+<style>
+    .toggle-buttons button {
+        padding: 10px 20px;
+        margin: 0 10px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    
+    .toggle-buttons .active {
+        background-color: #007bff;
+        color: white;
+    }
+    
+    .toggle-buttons .btn {
+        background-color: #f0f0f0;
+        color: #333;
+        border: 1px solid #ccc;
+    }
+</style>
+
+        
+
+
+
+        <!-- Portfolio Start -->
+        <div class="portfolio" id="portfolio">
+            <div class="container">
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p>My Portfolio</p>
+                    <h2>My Excellent Project</h2>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <ul id="portfolio-filter">
+                            <li data-filter="*" class="filter-active">All</li>
+                            <li data-filter=".filter-1">Web App</li>
+                            <li data-filter=".filter-2">AI ML</li>
+                            <li data-filter=".filter-3">Research</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row portfolio-container">
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img src="img/com.jpg" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>Laboratory Booking system</h3>
+                                <a class="btn" href="https://github.com/SathurshanPrabaharan/CO2-lab-booking-app-backend">+</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img src="img/imagecaption.jpg" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>Image Caption Generation using Deep Learning</h3>
+                                <a class="btn" href="https://github.com/Darshika-Premaranjan/image-caption">+</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img src="img/roadtrip.jpg" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>Smart Road Trip planner</h3>
+                                <a class="btn" href="https://github.com/Darshika-Premaranjan/road-trip-planner">+</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img src="img/cheq.jpeg" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>Cheque Information Extraction System
+                                </h3>
+                                <a class="btn" href="https://github.com/Darshika-Premaranjan/cheque-Information-Extraction-System">+</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img src="img/grammer.jpg" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>Spelling Corrector and Grammar Checker for Tamil
+                                </h3>
+                                <a class="btn" href="https://github.com/Darshika-Premaranjan/spelling-corrector-and-grammar-checker-for-Tamil">+</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img src="img/autism.jpg" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>Autism Prediction
+                                </h3>
+                                <a class="btn" href="https://github.com/Darshika-Premaranjan/Autism-Prediction-ML">+</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="1s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img src="img/nurode.jpg" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>Efficiency of binary gene expression in neurodegenerative diseases diagnosis
+                                </h3>
+                                <a class="btn" href="img/nurode.jpg" data-lightbox="portfolio">+</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio End -->
+        
+        <style>
+            .portfolio-img img {
+    width: 100%;
+    height: 250px; /* Adjust the height as needed */
+    object-fit: cover; /* Ensures images are cropped properly */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
+        </style>
+        <!-- Testimonial Start -->
+        <div class="testimonial wow fadeInUp" data-wow-delay="0.1s" id="review">
+            <div class="container">
+                <div class="testimonial-icon">
+                    <i class="fa fa-quote-left"></i>
+                </div>
+                <div class="owl-carousel testimonials-carousel">
+                    <div class="testimonial-item">
+                        <div class="testimonial-img">
+                            <img src="img/yarlit.jpg" alt="Image">
+                        </div>
+                        <div class="testimonial-text">
+                            <p>
+                                I'm excited to share that our team, CodeSpace, secured the 2nd Runner-Up position in the final event of CodeStorm 2.0! Competing against over 113 teams (300+ participants), it was an honor to be among the 54 finalists in the preliminary round and to finish in the Top 3 in the finals! 
+                            </p>
+                            <h3><𝗖𝗼𝗱𝗲𝗦𝘁𝗼𝗿𝗺 2.0/></h3>
+                            <h4>Yarl It Hub</h4>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-img">
+                            <img src="img/aces.jpg" alt="Image">
+                        </div>
+                        <div class="testimonial-text">
+                            <p>
+                                Together with my amazing teammates Sathurshan Prabaharan and Priyadharshani Navarathnam from Team uoj_hacktive, we tackled tough challenges, showcased our creativity, and pushed our problem-solving skills to the next level against 250+ coders across 75 teams! 
+                            </p>
+                            <h3>𝐀𝐂𝐄𝐒 𝐂𝐨𝐝𝐞𝐫𝐬 𝐕11.0</h3>
+                            <h4>University of Peradeniya</h4>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-img">
+                            <img src="img/ieee.png" alt="Image">
+                        </div>
+                        <div class="testimonial-text">
+                            <p>
+                                Celebrating our achievement at IEEEXtream 17.0! Team Hacktive, along with Navarathnam Priyadharshani and Sathurshan Prabaharan , clinched the 9th spot university-wise and 172nd in Sri Lanka. Grateful for the teamwork! 🧑‍💻
+                            </p>
+                            <h3>IEEEXtream</h3>
+                            <h4>IEEE</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
+
+        <!-- Team Start -->
+        <div class="team" id="team">
+            <div class="container">
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p>Certification</p>
+                    <h2>My relevant courseworks</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <a href="https://www.credly.com/badges/976e1117-1fda-4a78-9ef1-4679df047532/public_url" target="_blank">
+                                    <img src="img/githubaction.png" alt="GitHub Action Badge">
+                                  </a>
+                                  
+                            </div>
+                            <div class="team-text">
+                                <h2>Github Action</h2>
+                                <h4>by GITHUB</h4>
+                                <p>
+                                    Passing the GitHub Actions exam validates subject matter expertise with applying CI/CD patterns and practices using GitHub Actions in the enterprise.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <a href="https://courses.edx.org/certificates/9e4dbdc165ad4ac4acf36ed6bcd1f227" target="_blank">
+                                    <img src="img/web.png" alt="Badge">
+                                  </a>
+                                  
+                            </div>
+                            <div class="team-text">
+                                <h2>Web Development</h2>
+                                <h4>by IBM</h4>
+                                <p>
+                                    successfully completed and received a passing grade in
+                                    CAD101EN: Introduction to Web Development a course of study offered by IBM, an online learning initiative of IBM.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <a href="https://courses.edx.org/certificates/be8dda7de94c4e6fb78f91b625679d50" target="_blank">
+                                    <img src="img/cloud.png" alt="Badge">
+                                  </a>
+                                  
+                            </div>
+                            <div class="team-text">
+                                <h2>Cloud Computing</h2>
+                                <h4>by IBM</h4>
+                                <p>
+                                    successfully completed and received a passing grade in
+                                    CC0101EN: Introduction to Cloud Computing
+                                    a course of study offered by IBM, an online learning initiative of IBM.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <a href="https://www.coursera.org/account/accomplishments/certificate/KH528Q9DAFCM" target="_blank">
+                                    <img src="img/course.png" alt="Badge">
+                                  </a>
+                                  
+                            </div>
+                            <div class="team-text">
+                                <h2>Supervised Machine Learning: Regression and Classification</h2>
+                                <h4>by Andrew Ng</h4>
+                                <p>
+                                    has successfully completed
+                                an online non-credit course authorized by DeepLearning.AI and Stanford University andoffered through Coursera.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <a href="https://www.udemy.com/certificate/UC-9eda3f16-1222-4433-888b-9c46d3425051/?utm_campaign=email&utm_medium=email&utm_source=sendgrid.com" target="_blank">
+                                    <img src="img/docker.png" alt="Badge">
+                                  </a>
+                                  
+                            </div>
+                            <div class="team-text">
+                                <h2>Docker for Java Developer</h2>
+                                <h4>by Udemy</h4>
+                                <p>
+                                    has successfully completed
+                                an online non-credit course authorized by Naveen Reddy.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+        
+        
+        <!-- Contact Start -->
+        <div class="contact wow fadeInUp" data-wow-delay="0.1s" id="contact">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-8">
+                            <div class="contact-form">
+                                <div id="success"></div>
+                                <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                                    <div class="control-group">
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
+                                        <p class="help-block"></p>
+                                    </div>
+                                    <div class="control-group">
+                                        <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
+                                        <p class="help-block"></p>
+                                    </div>
+                                    <div class="control-group">
+                                        <input type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
+                                        <p class="help-block"></p>
+                                    </div>
+                                    <div class="control-group">
+                                        <textarea class="form-control" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
+                                        <p class="help-block"></p>
+                                    </div>
+                                    <div>
+                                        <button class="btn" type="submit" id="sendMessageButton">Send Message</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact End -->
+
+
+
+        <!-- Footer Start -->
+        <div class="footer wow fadeIn" data-wow-delay="0.3s">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="footer-info">
+                        <h2>Darshika Premaranjan</h2>
+                        <h3>Vavuniya , Sri Lanka</h3>
+                        <div class="footer-menu">
+                            <p>premaranjandarshika@gmail.com</p>
+                        </div>
+                        <div class="footer-social">
+                            <a href="https://web.facebook.com/Darshika.Premaranjan"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://leetcode.com/u/DarshikaP/
+                            "><i class="fa-solid fa-code"></i></a>
+                            <a href="https://github.com/Darshika-Premaranjan?page=2&tab=repositories"><i class="fa-brands fa-square-github"></i></a>
+                            <a href="https://www.linkedin.com/in/darshika-premaranjan/"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container copyright">
+                    <p>&copy; <a href="#">darshika.premaranjan</a>, All Right Reserved | 
+					
+					<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+        
+        
+        <!-- Back to top button -->
+        <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
+        
+        
+        <!-- Pre Loader -->
+        <div id="loader" class="show">
+            <div class="loader"></div>
+        </div>
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/typed/typed.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        
+        <!-- Contact Javascript File -->
+        <script src="mail/jqBootstrapValidation.min.js"></script>
+        <script src="mail/contact.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
